@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global Styles ===== */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+/* Centering container for pages */
+.container {
+  @apply flex flex-col items-center justify-center min-h-screen px-6;
+}
+
+/* ===== Headings ===== */
+h1 {
+  @apply text-3xl font-extrabold text-gray-900 mb-4;
+}
+
+h2 {
+  @apply text-2xl font-bold text-gray-800 mb-3;
+}
+
+/* ===== Buttons ===== */
+button {
+  @apply px-5 py-2 rounded-md font-medium shadow-md transition-all duration-300;
+}
+
+button:hover {
+  @apply scale-105;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.btn-secondary {
+  @apply bg-green-500 text-white hover:bg-green-600;
+}
+
+/* ===== Inputs ===== */
+input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+input:focus {
+  @apply border-blue-500;
+}
+
+/* ===== Forms ===== */
+form {
+  @apply bg-white shadow-lg rounded-lg p-6 w-full max-w-md;
+}
+
+/* ===== Links ===== */
+a {
+  @apply text-blue-600 hover:underline;
+}
